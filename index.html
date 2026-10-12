@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>אירוע רכיבות מבחן Royal Enfield | מוטופאן עפולה | 16.10.2026</title>
+  <meta name="description" content="אירוע רכיבות מבחן של רויאל אנפילד בסוכנות מוטופאן, השרטט 18 עפולה. יום שישי 16.10.2026, 09:00–14:00, כיבוד ושתייה במקום. תיאום רכיבת מבחן בוואטסאפ.">
+  <meta name="theme-color" content="#1a5fc0">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Open Graph / WhatsApp / Facebook preview.
+       After deploy, replace the relative image path with the full domain URL (e.g. https://example.vercel.app/assets/images/event-poster-og.jpg). -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="אירוע רכיבות מבחן Royal Enfield במוטופאן עפולה">
+  <meta property="og:description" content="יום שישי 16.10.2026 | 09:00–14:00 | השרטט 18, עפולה. לתיאום רכיבת מבחן בוואטסאפ.">
+  <meta property="og:image" content="/assets/images/event-poster-og.jpg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1080">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" as="image" href="/assets/images/hero-mobile.webp" media="(max-width: 767px)" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/images/hero-desktop.webp" media="(min-width: 768px)" fetchpriority="high">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "אירוע רכיבות מבחן Royal Enfield – סוכנות מוטופאן עפולה",
+    "startDate": "2026-10-16T09:00:00+03:00",
+    "endDate": "2026-10-16T14:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "מוטופאן – סוכנות ומוסך מורשה",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "השרטט 18",
+        "addressLocality": "עפולה",
+        "addressCountry": "IL"
+      }
+    },
+    "image": ["/assets/images/event-poster-og.jpg"],
+    "description": "רכיבות מבחן על אופנועי רויאל אנפילד. כיבוד ושתייה במהלך האירוע.",
+    "organizer": { "@type": "Organization", "name": "מוטופאן עפולה" }
+  }
+  </script>
+
+  <style>
+    :root {
+      --sky: #2b8ef0;
+      --blue: #1a5fc0;
+      --navy: #0a2a5c;
+      --deep: #071a3a;
+      --yellow: #ffd200;
+      --ink: #0d0d0d;
+      --wa: #25d366;
+      --cta-h: 62px;
+      --gutter: 12px;
+      --radius: 18px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html {
+      -webkit-text-size-adjust: 100%;
+      /* matches the gradient's end so the page continues seamlessly below short content */
+      background: var(--deep);
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      font-family: "Heebo", "Assistant", "Rubik", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      color: #fff;
+      /* sky → deep blue, taken from the poster's sky */
+      background: linear-gradient(180deg, var(--sky) 0%, var(--blue) 38%, var(--navy) 75%, var(--deep) 100%);
+      background-color: var(--navy);
+    }
+    .sr-only {
+      position: absolute !important;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0);
+      white-space: nowrap; border: 0;
+    }
+
+    /* ---------- Layout (mobile first) ---------- */
+    main {
+      width: 100%;
+      margin: 0 auto;
+      padding: var(--gutter) var(--gutter) calc(var(--gutter) + env(safe-area-inset-bottom));
+      display: flex;
+      flex-direction: column;
+      gap: var(--gutter);
+      /* on tall phones, center the content instead of leaving empty space under the button */
+      min-height: 100vh;
+      min-height: 100svh;
+      justify-content: center;
+    }
+
+    .hero {
+      display: block;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(4, 18, 45, .18);
+    }
+    .hero img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1080 / 1350;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gutter);
+    }
+
+    /* ---------- Event details (black panel + yellow icons, as in the ad) ---------- */
+    .details {
+      list-style: none;
+      margin: 0;
+      padding: 6px 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: rgba(13, 13, 13, .88);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 24px rgba(4, 18, 45, .3);
+    }
+    .details li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 4px;
+      min-width: 0;
+    }
+    .details li:nth-child(-n+2) { border-bottom: 2px solid var(--yellow); }
+    .details svg {
+      flex: none;
+      width: 28px; height: 28px;
+      fill: none;
+      stroke: var(--yellow);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .details .label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      opacity: .85;
+      line-height: 1.3;
+    }
+    .details .value {
+      display: block;
+      font-size: 16px;
+      text-align: start;
+      unicode-bidi: isolate;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    /* ---------- WhatsApp button ---------- */
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      min-height: var(--cta-h);
+      padding: 10px 18px;
+      border-radius: 14px;
+      background: var(--yellow);
+      color: var(--ink);
+      font-size: clamp(16px, 4.7vw, 22px);
+      font-weight: 900;
+      line-height: 1.2;
+      white-space: nowrap;
+      text-decoration: none;
+      box-shadow: 0 4px 0 #d9b200, 0 10px 24px rgba(4, 18, 45, .35);
+      transition: transform .12s ease, box-shadow .12s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .cta:hover { transform: translateY(-1px); }
+    .cta:active { transform: translateY(3px); box-shadow: 0 1px 0 #d9b200, 0 4px 12px rgba(4, 18, 45, .3); }
+    .cta:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+    .cta__icon {
+      flex: none;
+      display: grid;
+      place-items: center;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--wa);
+    }
+    .cta__icon svg { width: 22px; height: 22px; fill: #fff; }
+
+    /* Sticky CTA – shown only while the main button is off-screen */
+    .sticky-cta {
+      position: fixed;
+      inset-inline: 0;
+      bottom: 0;
+      z-index: 10;
+      padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
+      background: rgba(7, 26, 58, .92);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      transform: translateY(110%);
+      transition: transform .2s ease;
+    }
+    .sticky-cta.is-visible { transform: translateY(0); }
+    .sticky-cta .cta { max-width: 640px; margin: 0 auto; }
+    @media (prefers-reduced-motion: reduce) {
+      .sticky-cta, .cta { transition: none; }
+    }
+
+    /* ---------- Small phones ---------- */
+    @media (max-width: 374px) {
+      .details { padding: 4px 12px; }
+      .details li { gap: 8px; }
+      .details svg { width: 24px; height: 24px; }
+      .details .label { font-size: 12px; }
+      .details .value { font-size: 15px; }
+    }
+
+    /* ---------- Desktop ---------- */
+    @media (min-width: 768px) {
+      :root { --gutter: 16px; --radius: 22px; }
+      main {
+        /* wide hero: almost full width, but short enough that the button stays above the fold */
+        width: min(1600px, calc(100vw - 2 * var(--gutter)), calc((100svh - 150px) * 16 / 9));
+        min-width: 720px;
+        padding: var(--gutter) 0 calc(var(--gutter) * 2);
+        min-height: 0;
+        justify-content: flex-start;
+      }
+      .hero img { aspect-ratio: 1920 / 1080; }
+      .info {
+        flex-direction: row;
+        align-items: stretch;
+        gap: var(--gutter);
+      }
+      .details {
+        flex: 1;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+        padding: 4px 20px;
+      }
+      .details li { padding: 14px 8px; gap: 12px; }
+      .details svg { width: 34px; height: 34px; }
+      .details .label { font-size: 15px; }
+      .details .value { font-size: 20px; }
+      .details li:nth-child(-n+2) { border-bottom: 0; }
+      .details li + li { border-inline-start: 2px solid var(--yellow); padding-inline-start: 18px; }
+      .cta {
+        width: auto;
+        flex: 0 0 auto;
+        min-height: 76px;
+        padding-inline: 28px;
+        font-size: 22px;
+      }
+      .sticky-cta { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="wa-icon" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36A9.4 9.4 0 0 1 2.6 12.04C2.6 6.84 6.84 2.6 12.05 2.6c2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.45-9.43 9.45m8.03-17.48A11.3 11.3 0 0 0 12.05.7C5.8.7.7 5.79.7 12.04c0 2 .52 3.95 1.52 5.66L.6 23.3l5.73-1.5a11.33 11.33 0 0 0 5.72 1.46c6.25 0 11.34-5.09 11.34-11.34 0-3.03-1.18-5.88-3.31-8.02"/></symbol>
+  </svg>
+
+  <main>
+    <h1 class="sr-only">אירוע רכיבות מבחן Royal Enfield בסוכנות מוטופאן עפולה</h1>
+
+    <picture class="hero">
+      <source media="(max-width: 767px)" srcset="/assets/images/hero-mobile.webp" width="1080" height="1350">
+      <img
+        src="/assets/images/hero-desktop.webp"
+        width="1920" height="1080"
+        fetchpriority="high"
+        decoding="async"
+        alt="אירוע רכיבות מבחן רויאל אנפילד בסוכנות מוטופאן – רוכבים על אופנועי Royal Enfield בכביש הררי">
+    </picture>
+
+    <section class="info" aria-label="פרטי האירוע">
+
+      <ul class="details">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <span><span class="label">יום שישי</span><span class="value" dir="ltr">16.10.2026</span></span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span><span class="label">בין השעות</span><span class="value" dir="ltr">09:00–14:00</span></span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span><span class="label">כתובת</span><span class="value">השרטט 18, עפולה</span></span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-5zM17 11h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></svg>
+          <span><span class="label">במהלך האירוע</span><span class="value">כיבוד ושתייה</span></span>
+        </li>
+      </ul>
+
+      <a class="cta js-wa" id="cta-anchor"
+         data-cta-location="main"
+         href="https://wa.me/972504466109?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%93%D7%A3%20%D7%94%D7%A0%D7%97%D7%99%D7%AA%D7%94%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%A8%D7%95%D7%A2%20%D7%A8%D7%9B%D7%99%D7%91%D7%95%D7%AA%20%D7%94%D7%9E%D7%91%D7%97%D7%9F%20%D7%A9%D7%9C%20%D7%A8%D7%95%D7%99%D7%90%D7%9C%20%D7%90%D7%A0%D7%A4%D7%99%D7%9C%D7%93%20%D7%91%D7%A2%D7%A4%D7%95%D7%9C%D7%94.%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A8%D7%9B%D7%99%D7%91%D7%AA%20%D7%9E%D7%91%D7%97%D7%9F."
+         target="_blank" rel="noopener">
+        <span class="cta__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><use href="#wa-icon"/></svg>
+        </span>
+        <span>לתיאום רכיבת מבחן בוואטסאפ</span>
+      </a>
+    </section>
+  </main>
+
+
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <a class="cta js-wa" data-cta-location="sticky" tabindex="-1"
+       href="https://wa.me/972504466109?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%93%D7%A3%20%D7%94%D7%A0%D7%97%D7%99%D7%AA%D7%94%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%A8%D7%95%D7%A2%20%D7%A8%D7%9B%D7%99%D7%91%D7%95%D7%AA%20%D7%94%D7%9E%D7%91%D7%97%D7%9F%20%D7%A9%D7%9C%20%D7%A8%D7%95%D7%99%D7%90%D7%9C%20%D7%90%D7%A0%D7%A4%D7%99%D7%9C%D7%93%20%D7%91%D7%A2%D7%A4%D7%95%D7%9C%D7%94.%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A8%D7%9B%D7%99%D7%91%D7%AA%20%D7%9E%D7%91%D7%97%D7%9F."
+       target="_blank" rel="noopener">
+      <span class="cta__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><use href="#wa-icon"/></svg>
+      </span>
+      <span>לתיאום רכיבת מבחן בוואטסאפ</span>
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      // ---- Click tracking hook ----------------------------------------------
+      // Ready for GA4 / GTM / Meta Pixel: once any of them is added to the page,
+      // WhatsApp clicks are reported automatically. Nothing is sent until then.
+      function trackWhatsAppClick(location) {
+        var payload = { event: 'whatsapp_click', cta_location: location };
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(payload);                                   // Google Tag Manager
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'whatsapp_click', { cta_location: location }); // GA4
+        }
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', 'Contact', { cta_location: location });     // Meta Pixel
+        }
+        if (typeof window.va === 'function') {
+          window.va('event', { name: 'whatsapp_click', data: { cta_location: location } }); // Vercel Analytics
+        }
+        document.dispatchEvent(new CustomEvent('whatsapp:click', { detail: payload }));
+      }
+
+      document.querySelectorAll('.js-wa').forEach(function (el) {
+        el.addEventListener('click', function () {
+          trackWhatsAppClick(el.getAttribute('data-cta-location'));
+        });
+      });
+
+      // ---- Sticky CTA: visible while the main button is not fully in view -------
+      var anchor = document.getElementById('cta-anchor');
+      var sticky = document.getElementById('sticky-cta');
+      if (!('IntersectionObserver' in window)) {
+        sticky.classList.add('is-visible');
+        return;
+      }
+      new IntersectionObserver(function (entries) {
+        var hidden = entries[0].intersectionRatio < 1;
+        sticky.classList.toggle('is-visible', hidden);
+        sticky.setAttribute('aria-hidden', hidden ? 'false' : 'true');
+        sticky.querySelector('a').tabIndex = hidden ? 0 : -1;
+      }, { threshold: [0, 1] }).observe(anchor);
+    })();
+  </script>
+</body>
+</html>
