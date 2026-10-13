@@ -23,15 +23,15 @@ npx serve .
 לייבא את ה-Repository ב-Vercel, Framework Preset: **Other**, ללא Build Command ו-Output Directory.
 אחרי הפרסום מומלץ לעדכן ב-`index.html` את `og:image` (ואת `image` ב-JSON-LD) לכתובת מלאה של הדומיין.
 
-## מדידת לחיצות על וואטסאפ
-כל לחיצה מפעילה `trackWhatsAppClick(location)` (`main` / `sticky`) ששולחת:
-- `dataLayer.push({ event: 'whatsapp_click', cta_location })` – ל-Google Tag Manager
-- `gtag('event', 'whatsapp_click')` – אם GA4 מותקן
-- `fbq('track', 'Contact')` – אם Meta Pixel מותקן
-- `va('event', …)` – אם Vercel Analytics מותקן
-- אירוע DOM בשם `whatsapp:click`
+## Google Tag Manager ומדידת לחיצות
+הדף טוען את קונטיינר GTM ‏`GTM-WRKFCVL` (קוד ב-`<head>` ו-noscript אחרי `<body>`).
 
-כדי להתחיל למדוד מספיק להוסיף את קוד ההטמעה של הכלי ל-`<head>`.
+כל לחיצה על כפתור וואטסאפ שולחת ל-dataLayer:
+`{ event: 'whatsapp_click', cta_location: 'main' | 'sticky' }`
+
+ההגדרות של GA4 / Meta Pixel / Google Ads נעשות בתוך GTM:
+Trigger מסוג Custom Event בשם `whatsapp_click`, ו-Data Layer Variable בשם `cta_location`.
+הקוד בדף לא שולח לכלים האלה ישירות, כדי למנוע ספירה כפולה.
 
 ## שינוי מספר / הודעה
 הקישור נמצא פעמיים ב-`index.html` (כפתור ראשי וכפתור צף). פורמט: `https://wa.me/<מספר>?text=<הודעה מקודדת>`.

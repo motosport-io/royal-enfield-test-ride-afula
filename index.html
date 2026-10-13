@@ -2,6 +2,13 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="utf-8">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WRKFCVL');</script>
+  <!-- End Google Tag Manager -->
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>אירוע רכיבות מבחן Royal Enfield | מוטופאן עפולה | 16.10.2026</title>
   <meta name="description" content="אירוע רכיבות מבחן של רויאל אנפילד בסוכנות מוטופאן, השרטט 18 עפולה. יום שישי 16.10.2026, 09:00–14:00, כיבוד ושתייה עלינו. תיאום רכיבת מבחן בוואטסאפ.">
@@ -264,6 +271,10 @@
   </style>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRKFCVL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="wa-icon" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36A9.4 9.4 0 0 1 2.6 12.04C2.6 6.84 6.84 2.6 12.05 2.6c2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.45-9.43 9.45m8.03-17.48A11.3 11.3 0 0 0 12.05.7C5.8.7.7 5.79.7 12.04c0 2 .52 3.95 1.52 5.66L.6 23.3l5.73-1.5a11.33 11.33 0 0 0 5.72 1.46c6.25 0 11.34-5.09 11.34-11.34 0-3.03-1.18-5.88-3.31-8.02"/></symbol>
   </svg>
@@ -328,22 +339,14 @@
 
   <script>
     (function () {
-      // ---- Click tracking hook ----------------------------------------------
-      // Ready for GA4 / GTM / Meta Pixel: once any of them is added to the page,
-      // WhatsApp clicks are reported automatically. Nothing is sent until then.
+      // ---- Click tracking ----------------------------------------------------
+      // Clicks go to Google Tag Manager (GTM-WRKFCVL) only, via the dataLayer.
+      // GA4 / Meta Pixel / Ads tags are configured inside GTM on the
+      // "whatsapp_click" custom event, so nothing is counted twice.
       function trackWhatsAppClick(location) {
         var payload = { event: 'whatsapp_click', cta_location: location };
         window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push(payload);                                   // Google Tag Manager
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', 'whatsapp_click', { cta_location: location }); // GA4
-        }
-        if (typeof window.fbq === 'function') {
-          window.fbq('track', 'Contact', { cta_location: location });     // Meta Pixel
-        }
-        if (typeof window.va === 'function') {
-          window.va('event', { name: 'whatsapp_click', data: { cta_location: location } }); // Vercel Analytics
-        }
+        window.dataLayer.push(payload);
         document.dispatchEvent(new CustomEvent('whatsapp:click', { detail: payload }));
       }
 
